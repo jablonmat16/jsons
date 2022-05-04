@@ -1,0 +1,7 @@
+{"rabbit_version":"3.8.11","parameters":[],"policies":[{"vhost":"ILAB022","name":"HA_Mirror","pattern":
+"^(?!logQueue).*$","apply-to":"queuess","definition":{"ha-mode":"exactly","ha-params":2,"ha-promoteon-failure":"never","ha-promote-on-shutdown":"always","ha-sync-mode":"automatic","queuemode":"lazy"},"priority":99}],"queues":[{"name":"logQueue","durable":true,"auto_delete":false,"argum
+ents":{}},{"name":"OfflineProductCatalogQueue","durable":true,"auto_delete":false,"arguments":{}},{"n
+ame":"UpdateRateplanClassificationsQueue2","durable":true,"auto_delete":false,"arguments":{}},{"name
+":"PushDealerDataQueue","durable":true,"auto_delete":false,"arguments":{}}],"exchanges":[{"name":"s
+pringCloudHystrixStream","type":"topic","durable":true,"auto_delete":false,"internal":false,"arguments
+":{}}],"bindings":[]}
